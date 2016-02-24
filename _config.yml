@@ -1,0 +1,13 @@
+# Site settings
+title: Trevor Carr
+description:  "!!!!"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://trevorsee.github.io/"
+urlimg: "https://dl.dropboxusercontent.com/u/4683927/trevorcarr.info/images/"
+
+collections:
+  projects:
+    output: true
+
+# Build settings
+markdown: kramdown

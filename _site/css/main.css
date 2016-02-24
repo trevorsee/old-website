@@ -1,0 +1,228 @@
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, figure {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em; }
+
+body {
+  font: 400 18px/1.6 "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  color: #3c485f;
+  background-color: #fff;
+  border: 1.5rem solid #fff; }
+
+section {
+  margin: 8em 0; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+li {
+  list-style: none; }
+
+h1 {
+  margin: 0 0 .5rem; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+.hang {
+  position: absolute !important;
+  right: 3em;
+  transition: .25s; }
+
+.hang:hover {
+  transform: scale(1.05); }
+
+.hang.large:hover {
+  transform: scale(1.05); }
+
+a {
+  position: relative;
+  color: #3c485f;
+  text-decoration: none;
+  border-bottom: 2pt  solid;
+  cursor: pointer; }
+  a:hover {
+    background: #fff; }
+
+.external:after {
+  position: absolute;
+  height: .5em;
+  content: url("https://dl.dropboxusercontent.com/u/4683927/trevorcarr.info/images//external.svg");
+  vertical-align: baseline; }
+
+header {
+  top: 3rem;
+  width: 100%;
+  position: fixed;
+  z-index: 100; }
+
+nav {
+  display: flex; }
+  nav li {
+    padding-right: 3em; }
+
+.page {
+  background-color: #eee;
+  position: relative;
+  padding: 3rem;
+  min-height: 100vh; }
+
+.wrap {
+  max-width: 30rem; }
+  @media screen and (max-width: 800px) {
+    .wrap {
+      max-width: 30rem; } }
+
+.toggleable:before {
+  margin: 0 .5em 0 -1em;
+  content: '\2212';
+  display: inline-block; }
+
+footer {
+  margin: 2em 3em 0;
+  font-size: 13.5px; }
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .projects a {
+    border: none; }
+    .projects a:hover {
+      background: none; }
+
+.project {
+  transition: .25s;
+  margin: 3rem;
+  padding: 1rem; }
+  .project:hover {
+    transform: scale(1.05); }
+
+.sm {
+  display: inline-block;
+  height: 1.5em; }
+
+.bg {
+  max-width: 12em;
+  max-height: 12em; }
+
+.large {
+  max-width: 45rem;
+  max-height: 25rem;
+  height: auto; }
+
+.none {
+  visibility: hidden; }
+
+.m1 {
+  margin: 2rem; }
+
+.nobreak {
+  white-space: nowrap; }
+
+.bold {
+  font-weight: 600; }
+
+.italic {
+  font-style: italic; }
+
+.w1 {
+  width: 1rem; }
+
+.w2 {
+  width: 2rem; }
+
+.w3 {
+  width: 3rem; }
+
+.w4 {
+  width: 4rem; }
+
+.w5 {
+  width: 5rem; }
+
+.w6 {
+  width: 6rem; }
+
+.w7 {
+  width: 7rem; }
+
+.w8 {
+  width: 8rem; }
+
+.w9 {
+  width: 9rem; }
+
+.w10 {
+  width: 10rem; }
+
+.w11 {
+  width: 11rem; }
+
+.w12 {
+  width: 12rem; }
+
+.w13 {
+  width: 13rem; }
+
+.w14 {
+  width: 14rem; }
+
+.w15 {
+  width: 15rem; }
+
+.w16 {
+  width: 16rem; }
+
+.w17 {
+  width: 17rem; }
+
+.w18 {
+  width: 18rem; }
+
+.w19 {
+  width: 19rem; }
+
+.w20 {
+  width: 20rem; }
+
+.w21 {
+  width: 21rem; }
+
+.w22 {
+  width: 22rem; }
+
+.w23 {
+  width: 23rem; }
+
+.w24 {
+  width: 24rem; }
+
+.w25 {
+  width: 25rem; }
+
+.w26 {
+  width: 26rem; }
+
+.w27 {
+  width: 27rem; }
+
+.w28 {
+  width: 28rem; }
+
+.w29 {
+  width: 29rem; }
+
+.w30 {
+  width: 30rem; }

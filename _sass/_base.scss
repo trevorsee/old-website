@@ -1,0 +1,163 @@
+//
+// reset
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, figure {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size: 1em;
+}
+
+
+//
+// Basic styling
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $black;
+  background-color: $white;
+  border: 1.5rem solid $white;
+}
+
+section {
+	margin: 8em 0;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  margin: 0 0 .5rem;
+}
+
+//
+// images
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.hang{
+  position: absolute !important;
+  right: 3em;
+  transition: .25s;
+}
+
+.hang:hover {
+  transform: scale(1.05);
+}
+
+.hang.large:hover {
+  transform: scale(1.05);
+}
+
+//
+// links
+a {
+  position: relative;
+  color: $black;
+  text-decoration: none;
+  border-bottom: 2pt  solid;
+  cursor: pointer;
+
+  &:hover {
+    background: $white;
+  }
+
+
+}
+
+.external:after {
+  position: absolute;
+  height: .5em;
+  content: url( $iconlink );
+  vertical-align: baseline;
+}
+
+//
+// navigation
+header {
+  top: 3rem;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+
+  li {
+    padding-right: 3em;
+  }
+}
+
+
+//
+// wrap
+.page {
+  background-color: #eee;
+  position: relative;
+	padding: 3rem;
+  min-height: 100vh;
+}
+
+.wrap {
+  max-width: $content-width;
+
+  @include media-query($on-laptop) {
+    max-width: $content-width
+    }
+}
+
+//
+// collapse
+.toggleable:before {
+  margin: 0 .5em 0 -1em;
+  content: '\2212';
+  display: inline-block;
+}
+
+//
+// footer
+footer {
+  margin: 2em 3em 0;
+  font-size: $small-font-size;
+}
+
+//
+// project page
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  a{
+    border:none;
+    &:hover{
+      background: none;
+    }
+  }
+}
+
+.project {
+  transition: .25s;
+  margin: 3rem;
+  padding: 1rem;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

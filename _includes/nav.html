@@ -1,0 +1,12 @@
+<header>
+  <nav class="wrap">
+      {% for my_page in site.pages %}
+        {% if my_page.title %}
+          <li>
+            <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+      <a class="external" "href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#116;&#114;&#101;&#118;&#111;&#114;&#99;&#97;&#114;&#114;&#46;&#105;&#110;&#102;&#111;'>&#101;&#109;&#97;&#105;&#108;</a>
+  </nav>
+</header>

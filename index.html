@@ -1,1 +1,53 @@
-coming soon
+---
+layout: default
+title: trevor carr
+date: 2016-02-20
+---
+
+<div class="wrap">
+
+<section>
+  <p>I'm a designer in Baltimore pursuing a BFA at <a href=''>MICA</a> while working part time at <a href=''>Friends of the Web</a>. <img class="sm" src="https://pbs.twimg.com/profile_images/629414589734608898/CdR6_Iiz.jpg" /></p>
+</section>
+
+<section>
+  <p>My process is interdisciplinary, speculative and <span class='nobreak'>theory-driven</span> while also having the rigor of thoughtful user experience. I'm interested in how long-established disciplines (e.g. architecture or woodworking) can inform designing on a screen. Buildings are a lot like websites.</p>
+  <p>People keep telling me that I like piles.</p>
+</section>
+
+<section>
+  <h1 class="bold " href=''>Things I'm reading:</h1>
+  <ul>
+    {% for item in site.data.reading %}
+    <li>
+      <a href={{item.url}}>{{ item.title }}</a>
+      <img class="sm" src={{site.urlimg}}{{item.image}} />
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<!-- nothing here yet -->
+<!-- <section>
+  <a class="bold toggleable" href=''>links etc.</a>
+  <ul>
+    {% for item in site.data.links %}
+    <li>
+      <a href={{item.url}}>{{ item.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section> -->
+
+<section>
+  <h1 class="bold" href=''>Contact me:</h1>
+  <ul>
+    {% for item in site.data.contact %}
+    <li>
+      {{item.label}}: <a href={{item.url}}>{{ item.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+</div>

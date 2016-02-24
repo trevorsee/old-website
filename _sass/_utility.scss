@@ -1,0 +1,47 @@
+//image stuff
+.sm {
+  display: inline-block;
+	height: 1.5em;
+}
+
+.bg {
+  max-width: 12em;
+  max-height: 12em;
+}
+
+.large {
+  //right: 50% !important;
+  //transform: translateX(50%);
+  max-width: 45rem;
+  max-height: 25rem;
+  height: auto;
+}
+
+.none {
+  visibility: hidden;
+}
+
+.m1 {
+  margin: 2rem;
+}
+
+//typography
+.nobreak {
+  white-space: nowrap;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.italic {
+  font-style:italic;
+}
+
+
+
+@for $i from 1 through 30 {
+    .w#{$i} {
+        width: 0rem + $i;
+    }
+}
